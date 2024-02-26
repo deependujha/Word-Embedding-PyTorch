@@ -2,6 +2,11 @@
 
 **`Word Embeddings` are a representation of the *`semantics of a word`*, efficiently encoding semantic information that might be relevant to the task at hand.**
 
+- Embeddings in pytorch are like a lookup table that stores the word vectors. It simply returns the word vector for the given word (index).
+- In simplest words, it is a 2D tensor of shape (vocab_size, embedding_dim).
+- For the word at index `i`, the embedding is the `i-th` row of the matrix.
+- It is a trainable layer in the neural network. (`a sparse one-hot vector is multiplied with the embedding matrix to get the word vector`)
+
 ![Word Embedding](./assets/Visualization-of-the-word-embedding-space.png)
 
 - Converting Words to **vector** form, that contains the semantic information of the word.
