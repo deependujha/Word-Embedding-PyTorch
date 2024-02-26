@@ -2,6 +2,7 @@
 
 **`Word Embeddings` are a representation of the *`semantics of a word`*, efficiently encoding semantic information that might be relevant to the task at hand.**
 
+![Word Embedding](./assets/Visualization-of-the-word-embedding-space.png)
 
 - Converting Words to **vector** form, that contains the semantic information of the word.
 - This Embedding can be used as the input to the model, to perform the task like `Sentiment Analysis`, `Named Entity Recognition`, `Part of Speech Tagging`, etc.
@@ -60,6 +61,18 @@ the lazy | dog
 - **one input word** is used to **predict the surrounding words**.
 
 ![Skip-Gram](./assets/skip-gram.png)
+
+```markdown
+# Example
+sentence = "The quick brown fox jumps over the lazy dog"
+
+# Input & Output
+input   |    output
+------- | ----------------------------
+brown   | (quick The) (fox jumps)
+fox     | (brown quick) (jumps over)
+...
+```
 
 ---
 
